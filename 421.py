@@ -24,13 +24,13 @@ while reponse!="Q":
 	lancers=[random.randint(1,6), random.randint(1,6),random.randint(1,6)]
 	print ("Lancer 1",lancers)
 	nb_lancers=1
-	choix_joueur=str(input("Voulez-vous garder les dés 1, 2 et/ou 3 ?"))
+	choix_joueur=str(input("Voulez-vous garder les dés 1, 2 et/ou 3 ? "))
 	continuer=check_fin_tour(choix_joueur)
 	if continuer=="oui":
 		lancers=change_dices(lancers, choix_joueur)
 		print("Lancer 2",lancers)
 		nb_lancers+=1
-		choix_joueur=str(input("Voulez-vous garder les dés 1, 2 et/ou 3 ?"))
+		choix_joueur=str(input("Voulez-vous garder les dés 1, 2 et/ou 3 ? "))
 		continuer=check_fin_tour(choix_joueur)
 		if continuer=="oui":
 	   		lancers=change_dices(lancers, choix_joueur)
@@ -40,7 +40,7 @@ while reponse!="Q":
 		print("Résultat final :",lancers,"en", nb_lancers,"lancer.")
 	else:
 		print("Résultat final :",lancers,"en", nb_lancers,"lancers.")
-	reponse=input("Entrée pour rejouer, Q pour quitter")
+	reponse=input("Entrée pour rejouer, Q pour quitter ")
 	reponse=reponse.upper()
 	print("")
 
